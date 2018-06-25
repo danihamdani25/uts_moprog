@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="calculator.a1311511032.mobileprogramming.com.calculator.MainActivity">
+
+    <TextView
+        android:id="@+id/labelResult"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Hasil"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="@+id/textInput"
+        app:layout_constraintTop_toBottomOf="@+id/textInput" />
+
+    <EditText
+        android:id="@+id/textInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:requiresFadingEdge="horizontal|vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelResult">
+
+        <Button
+            android:id="@+id/buttonKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KALI"
+            app:layout_constraintLeft_toRightOf="@+id/buttonBagi"
+            app:layout_constraintTop_toTopOf="@+id/buttonBagi" />
+
+        <Button
+            android:id="@+id/buttonBagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BAGI"
+            app:layout_constraintLeft_toRightOf="@+id/buttonKurang"
+            app:layout_constraintTop_toTopOf="@+id/buttonKurang" />
+
+        <Button
+            android:id="@+id/buttonKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KURANG"
+            app:layout_constraintLeft_toRightOf="@+id/buttonTambah"
+            app:layout_constraintTop_toTopOf="@+id/buttonTambah" />
+
+        <Button
+            android:id="@+id/buttonTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:foregroundGravity="left|right"
+            android:text="TAMBAH" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:text="RESET"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@+id/textInput"
+        app:layout_constraintTop_toTopOf="@+id/textInput" />
+
+</android.support.constraint.ConstraintLayout>
